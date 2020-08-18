@@ -1,0 +1,68 @@
+body {
+    background-color: rgb(200, 196, 196)
+}
+
+#first-card {
+    padding: 10px;
+}
+
+#second-card {
+    padding: 10px;
+}
+
+#third-card {
+    padding: 10px;
+}
+
+#fourth-card {
+    padding: 10px;
+}
+
+#fifth-card {
+    padding: 10px;
+}
+
+#sixth-card {
+    padding: 10px;
+}
+
+.container {
+    margin-top: 15px;
+
+}
+
+.row {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+      margin-top: 10px;
+    }
+
+    #first-card {
+        margin-top: 10px;
+    }
+    
+    #second-card {
+        margin-top: 10px;
+    }
+    
+    #third-card {
+        margin-top: 10px;
+    }
+
+    #fourth-card {
+        margin-top: 10px;
+    }
+
+    #fifth-card {
+        margin-top: 10px;
+    }
+
+    #sixth-card {
+        margin-top: 10px;
+    }
+    
+  }
