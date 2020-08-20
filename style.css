@@ -2,6 +2,12 @@ body {
     background-color: rgb(200, 196, 196);
 }
 
+p {
+    font-size: large;
+}
+
+/* index.html */
+
 /* Main Body Paragraphs*/
 
 h2 {
@@ -15,32 +21,7 @@ h2 {
 
 /* End of Main Body Paragraphs */
 
-
 /* Cards */
-
-#first-card {
-    padding: 10px;
-}
-
-#second-card {
-    padding: 10px;
-}
-
-#third-card {
-    padding: 10px;
-}
-
-#fourth-card {
-    padding: 10px;
-}
-
-#fifth-card {
-    padding: 10px;
-}
-
-#sixth-card {
-    padding: 10px;
-}
 
 .container {
     margin-top: 10px;
@@ -51,35 +32,45 @@ h2 {
     margin-bottom: 20px;
 }
 
+img {
+    margin: 0;
+}
+
+
 /* End of Cards */
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 500px) {
     .container {
-      margin-top: 10px;
+        margin-top: 10px;
     }
 
-    #first-card {
+    .card {
         margin-top: 10px;
     }
     
-    #second-card {
-        margin-top: 10px;
-    }
-    
-    #third-card {
-        margin-top: 10px;
-    }
+  }
 
-    #fourth-card {
-        margin-top: 10px;
-    }
 
-    #fifth-card {
-        margin-top: 10px;
-    }
 
-    #sixth-card {
-        margin-top: 10px;
-    }
-    
+
+  /* portfolio.html */
+
+  #grad-photo {
+      border-radius: 50%;
+      margin-left: 30px;
+  }
+
+  #door-to-door {
+      border-radius: 50%;
+      float: left;
+      margin-right: 20px;
+  }
+
+  #door-to-doo-2 { 
+      border-radius: 50%;
+      margin-left: 20px;
+  }
+
+  .adv-in-workforce {
+      margin-top: 20px;
   }
