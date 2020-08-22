@@ -6,15 +6,11 @@ p {
     font-size: large;
 }
 
-button:hover {
+#socials:hover {
     border: 1px solid black;
     background: rgb(202, 202, 243);
 }
 
-
-
-  /* portfolio.html */
-
-  .portfolio-photos {
+.portfolio-photos {
       border-radius: 50%;
   }
