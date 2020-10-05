@@ -47,6 +47,10 @@ a:hover {
   margin-bottom: 20px;
 }
 
+#current-page {
+  color: rgb(17, 215, 215);
+}
+
   /* Index */
 .portfolio-photos {
   border-radius: 50%;
@@ -67,10 +71,6 @@ a:hover {
     height: auto;
     margin-left: 0px;
   }
-}
-
-#main-stock-cards{
-  margin: 20px;
 }
 
 .index-pictures {
