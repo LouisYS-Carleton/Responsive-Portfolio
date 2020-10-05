@@ -1,5 +1,8 @@
 My Responsive Portfolio Project
 
+<img src="./Assets/second 2020-10-05 at 4.50.00 PM.png" alt="screenshot of app">
+<img src="./Assets/first 2020-10-05 at 4.50.14 PM.png" alt="screeshot of app">
+
 
 1. Index page that refers to the home page of my website. Includes songs and a brief paragraph.
 
