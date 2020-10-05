@@ -1,235 +1,76 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Louis Yacksmith's personal portfolio, demonstrating both skills in web development and music alike.">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  </head>
 
-<html lang="en">
-
-<head>
-
-  <meta charset="UTF-8">
-  <meta name="Description"
-    content="Louis Yacksmith's personal portfolio, demonstrating both skills in web development and music alike.">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-
-  <title>Louis YS Portfolio</title>
-
-</head>
-
-<body>
-
-  <!-- Navbar -->
-
-  <main class="container">
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-       <a class="navbar-brand" href="./index.html">Louis Yacksmith</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contact.html">Contact</a>
-          </li>
-        </ul>
-    </div>
-
-    </nav>
-
-    <!-- End of Navbar -->
-
-<br>
-
-    <!-- Main Body Text -->
-
-    <div class="row">
-      <div class="col-md-12">
-        <h2>
-          Welcome to my personal portfolio!
-        </h2>
+  <body>
+      <!-- navbar -->
+    <nav class="navbar" style="background-color: rgb(1 54 68); padding: 10px; display:flex;">
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">Home</a>
+        <a href="about-me.html">About Me</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
       </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-8">
-        <p>
-          My name is Louis Yacksmith and I am a professional Web Designer living in Ottawa, Ontario. I am a jack of all
-          trades, and through a variety of jobs ranging from a fine dining chef all the way to retail, I am confident
-          with my ability to create a positive and highly motivated work environment. Craving more in life and a career
-          that I can be happy with I set out to earn my degree in Web Development at Carleton University, and that was
-          the start of a lifelong passion for coding and the creativity that comes hand in hand with developing
-          websites. 
-<br>
-          This website is an quick example of some of the skills I have gained through my experiences. As an
-          avid musician on the side, I thought I would include some rough songs that I recorded on my phone which I
-          wrote in my profile for you to relax to while you scan over my portfolio.
-          Thank you, enjoy the music, and I hope you enjoy my website!
-        </p>
-      </div>
-    </div>
-
-
-  <div class="container">
-    <div class="row mt-5">
-
-      <!-- First card -->
-
-      <div class="col-md-4 col-sm-12">
-        <div class="card" style="width: 22rem; margin:auto">
-          <div class="card-body">
-              <h3 class="card-header">Blissful Eyes</h3>
-                <iframe width="310" height="270" src="https://www.youtube.com/embed/DHygzx7QlCQ" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-          </div>  
-        </div>
-
-        <!-- End of first card -->
-
-        <!-- Second card -->
-
-      <div class="col-md-4 col-sm-12">
-        <div class="card" style="width: 22rem; margin:auto">
-          <div class="card-body">
-            <h3 class="card-header">Changes</h3>
-            <iframe width="310" height="270" src="https://www.youtube.com/embed/9XJ7_-aMEEI" frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-
-        <!-- End of second card -->
-
-        <!-- Third card -->
-
-    <div class="col-md-4 col-sm-12">
-      <div class="card" style="width: 22rem; margin:auto">
-        <div class="card-body">
-          <h3 class="card-header">Who I am at 23</h3>
-              <iframe width="310" height="270" src="https://www.youtube.com/embed/RMOBUoxuYUY" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-
-    </div>
-
-    <!-- End of third card -->
-
-    <!-- Fourth card -->
-
-    <div class="row">
-      <div class="col-md-4 col-sm-12">
-        <div class="card" style="width: 22rem; margin:auto">
-          <div class="card-body">
-             <h3 class="card-header">Take my time</h3>
-                <iframe width="310" height="270" src="https://www.youtube.com/embed/dncvpZ0nWBE" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-
-      <!-- End of Fourth card -->
-
-      <!-- Fifth card -->
-
-      <div class="col-md-4 col-sm-12">
-        <div class="card" style="width: 22rem; margin:auto">
-          <div class="card-body">
-            <h3 class="card-header">Hey Mama</h3>
-              <iframe width="310" height="270" src="https://www.youtube.com/embed/WKBADNFkonI" frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-
-      <!-- End of fifth card -->
-
-      <!-- Sixth card -->
-
-      <div class="col-md-4 col-sm-12">
-        <div class="card" style="width: 22rem; margin:auto">
-          <div class="card-body">
-            <h3 class="card-header">Nothing Special</h3>
-              <iframe width="310" height="270" src="https://www.youtube.com/embed/7ESfQ1fjt9c" frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-      <!-- End of sixth card -->
-   
-  </main>
-
-      <!-- End of Main Body Text -->
-
-
-      <!-- Footer -->
       
-<footer class="page-footer font-small indigo">
-
-  <div class="container">
-    <div class="row text-center d-flex justify-content-center pt-5 mb-3">
-      <div class="col-md-2 mb-3">
-        <h6 class="text-uppercase font-weight-bold">
-          <a href="./index.html">Home</a>
-        </h6>
+      <button class="openbtn" onclick="openNav()">  
+        ☰
+      </button> 
+      <div>
+        <a id="navbar-name" href="./index.html">
+          Louis Yacksmith
+        </a>
       </div>
+    </nav>
+      <!--  -->
 
-      <div class="col-md-2 mb-3">
-        <h6 class="text-uppercase font-weight-bold">
-          <a href="./portfolio.html">Portolio</a>
-        </h6>
-      </div>
+      <!-- Main Section -->
+    <main>
+      <header id="container-header">
+          <h1 class="webpage-header">Home</h1>
+      </header>
 
-      <div class="col-md-2 mb-3">
-        <h6 class="text-uppercase font-weight-bold">
-          <a href="./contact.html">Contact</a>
-        </h6>
-      </div>
+      <div class="main-gallery js-flickity" data-flickity-options='{"cellAlign": "left", "contain": true}'>
+        <div class="gallery-cell">        
+          <img src="./Assets/MAT_9247.jpeg" class="portfolio-photos" id="responsive" alt="Louis Graduation Photo">  
+        </div>
+        <div class="gallery-cell">        
+          <p id="greeting-info-paragraph">
+            My name is Louis Yacksmith and I am a professional Web Designer living in Ottawa, Ontario. I've worked in many different types of industries and gained a wide variety of skills through these jobs, and as a result have earned the ability to create an exciting, efficient, and optimistic work environment. 
+            This portfolio is a short synopsis of my work, feel free to reach me through the "Contact" link on this webpage!
+          </p> 
+        </div>
+        <div class="gallery-cell">        
+          <img src="./Assets/stockbuddy-screenshot.png" alt="Stockbuddy" class="index-pictures">
+        </div>
+        <div class="gallery-cell">
+          <img src="./Assets/saved-plan.png" alt="Day planner" class="index-pictures">
+        </div>
+        <div class="gallery-cell">
+          <img src="./Assets/Screen Shot 2020-10-04 at 8.05.17 PM.png" alt="Weather dashboard" class="index-pictures">
+        </div>
+      </div>  
+    </main>
+      <!-- End of Main Section -->
+    
+      <!-- Footer -->
+      <div id="footer">
+        <div class="row">
+          <a href="./index.html" class="footer-links">Home</a>
+          <a href="./about-me.html" class="footer-links">About Me</a>
+          <a href="./portfolio.html" class="footer-links">Portolio</a>
+          <a href="./contact.html" class="footer-links">Contact</a>
+        </div>
+      </div> 
+      <!--  -->
 
-    </div>
-
-    <hr class="rgba-white-light" style="margin: 0 15%;">
-
-    <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
-
-  </div>
-
-  <div class="footer-copyright text-center py-3">
-    <a href="./index.html"> Louis Yacksmith</a>
-  </div>
-
-</footer>
-
-      <!-- End of Footer -->
-
-      <!-- Javascript -->
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
-
-      <!-- End of Javascript -->
-
-</body>
-
-</html>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html> 

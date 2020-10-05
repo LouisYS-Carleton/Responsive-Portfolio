@@ -1,149 +1,98 @@
 <!DOCTYPE html>
-
-<html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Description" content="Louis Yacksmith's personal portfolio, demonstrating both skills in web development and music alike.">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  </head>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <body>
 
-    <title>Louis YS Portfolio</title>
-
-</head>
-
-<body>
-
-    <!-- Navbar -->
-
-    <nav class="container">
-
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="./index.html">Louis Yacksmith</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>          
-          </ul>
-        </div>
-      </nav>
+    <nav class="navbar" style="background-color: rgb(1 54 68); padding: 10px; display:flex;">
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">Home</a>
+        <a href="about-me.html">About Me</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </div>
       
-    <!-- End of Navbar -->
-    
-<br>
+      <button class="openbtn" onclick="openNav()">  
+        ☰
+      </button> 
+      <div>
+        <a id="navbar-name" href="./index.html">
+          Louis Yacksmith
+        </a>
+      </div>
+    </nav>
+      <!--  -->
 
-    <!-- Main Body of Text -->
-
-  <main>
-      <header class="row">
-          <div class="col-md-12">
-            <h1><u>Portfolio</u></h1>
-          </div>
+      <!-- Main Section -->
+      <header id="container-header">
+          <h1 class="webpage-header">Portfolio</h1>
       </header>
 
-      <section class="row">
-        <article class="col-md-8 my-auto">
-          <h2>School</h2>
-          <p>
-            Being highly driven in a creative sense, I focused more on alternative forms of education during my main highschool career. As a result, I ended up moving school to Richard Pfaff High School to finish my studies and earn my diploma.
-          </p>     
-        </article>
-        <aside class="col-md-4">
-          <img src="./MAT_9247.jpeg" class="portfolio-photos" width="300" height="300" alt="Louis Graduation Photo">
-        </aside> 
-      </section>
+      <div class="main-gallery js-flickity" data-flickity-options='{"cellAlign": "left", "contain": true}'>
+        <div class="gallery-cell">     
+          <a class="portfolio-links" href="https://louisys-carleton.github.io/Random-Password-Generator/">Password Generator</a>   
+          <img src="./Assets/Screen Shot 2020-10-04 at 10.48.43 PM.png" alt="Password Generator" class="portfolio-pictures">
+          <p id="passgen-paragraph" class= "portfolio-paragraphs">
+            An app that allows the user to select their desired characters (special, numbers, lowercase, etc.) and will put out a randomly generated password according to what they have selected.
+          </p>  
+        </div>
 
-      <section class="row">
-        <aside class="col-md-4">
-          <img src="./Cydcor-why-door-to-door-sales-scaled.jpeg" class="portfolio-photos" width="300" height="300" alt="door to door salesman">
-        </aside> 
-        <article class="col-md-8 my-auto">
-          <h2>Post-Graduation</h2>           
-          <p>
-            After graduating from highschool, I was determined to learn as much about myself as I could before continuing with my studies. During this time I did every odd job imaginable, ranging from door to door sales to supervising a toy store. This time in my life was incredibly beneficial, and I believe I gained people skills that are highly adaptable and infinitely useful for what was to come when I started in the restaurant industry.
-          </p>
-        </article>
-      </section>
+        <div class="gallery-cell"> 
+          <a class="portfolio-links" href="https://louisys-carleton.github.io/stock-buddy/">Stockbuddy</a>      
+          <img src="./Assets/stockbuddy-screenshot.png" alt="Stockbuddy" class="portfolio-pictures">
+          <p id="stockbuddy-paragraph" class= "portfolio-paragraphs">
+            My first large project, this app is used to help beginners enter the stock market. <br> Once the user has typed a stock symbol of their choice into the search engine it will give a pinnable card as the search result. They can then pin this card to their "workspace", and use the pinned stock to view trends, news, and other important information relating to that company.
+          </p> 
+        </div>
 
-      <section class="row pt-4">
-        <article class="col-md-8 my-auto">
-          <h2>Advancing in the Workforce</h2>            
-          <p>
-            After years of experimenting in the workforce, I found a career that I would be happy to stick with until I was finally ready to dedicate my life to an industry. Starting as a dishwasher at Grounded Restaurant, I quickly moved up within a year to part time chef. From there I had the time of my life in a plethora of different restaurant environments, gaining culinary skills in both fine dining and uncommon types of fast food alike. As much as I loved the work and excelled within the industry, however, there came a time when I realized that I had a larger dream to strive for, and went back to school.
-          </p>
-        </article>
-        <aside class="col-md-4">
-          <img src="./20180628_173038.jpg" class="portfolio-photos" width="300" height="300" alt="Charcut Platter Made by Me">
-        </aside> 
-      </section>
+        <div class="gallery-cell">
+          <a class="portfolio-links" href="https://louisys-carleton.github.io/Day-Planner/">Day Planner</a> 
+          <img src="./Assets/saved-plan.png" alt="Day planner" class="portfolio-pictures">
+          <p id="dayplanner-paragraph" class= "portfolio-paragraphs">
+            A tool that helps the user sort out their daily plans at work. Just type in what you have planned for later, hit save, and you'll never miss another cover sheet on those TPS reports ever again!
+          </p> 
+        </div>        
 
-  </main>
+        <div class="gallery-cell">
+          <a class="portfolio-links" href="https://louisys-carleton.github.io/Weather-Dashboard/">Weather Dashboard</a> 
+          <img src="./Assets/weatherdash.jpg" alt="Weather dashboard" class="portfolio-pictures">
+          <p id="weatherdash-paragraph" class= "portfolio-paragraphs">
+            A simple weather app. It allows the user to look up their city, save it to localStorage, and then check back whenever they need to without any fuss. Includes a 5 day forecast, UV index levels, and other essential features.
+          </p> 
+        </div>
 
-    <!-- End of Main Body of Text -->
+        <div class="gallery-cell">    
+          <a class="portfolio-links" href="https://github.com/LouisYS-Carleton/Full-List-Of-Terms-And-Practice-Folders/blob/master/Linux%20Tech%20Tutorial/Full%20List%20Of%20Terms">Knowledge Index</a> 
+          <img src="./Assets/Screen Shot 2020-10-04 at 10.51.27 PM.png" alt="Self made index" class="portfolio-pictures">
+          <p id="indexcard-paragraph" class= "portfolio-paragraphs">
+            This is a personalized and indexed "cheat sheet" of sorts, detailing many of the things that I have learned on my own time. I update this constantly, and will be adding my course material in the near future.
+          </p>    
+        </div>
 
-    <!-- Footer -->
-<footer class="page-footer font-small indigo">
+        <div class="gallery-cell">  
+          <h1 class="portfolio-names">Stay Tuned!</h1>   
+          <img src="./Assets/crm-for-construction--webp.jpg" alt="construction" class="portfolio-pictures">
+        </div>
+      </div> 
 
-  <div class="container">
-    <div class="row text-center d-flex justify-content-center pt-5 mb-3">
-      <div class="col-md-2 mb-3">
-        <h6 class="text-uppercase font-weight-bold">
-          <a href="./index.html">Home</a>
-        </h6>
+      <!-- footer -->
+      <div id="footer">
+        <div class="row">
+          <a href="./index.html" class="footer-links">Home</a>
+          <a href="./about-me.html" class="footer-links">About Me</a>
+          <a href="./portfolio.html" class="footer-links">Portolio</a>
+          <a href="./contact.html" class="footer-links">Contact</a>
+        </div>
       </div>
 
-      <div class="col-md-2 mb-3">
-        <h6 class="text-uppercase font-weight-bold">
-          <a href="./portfolio.html">Portolio</a>
-        </h6>
-      </div>
-
-      <div class="col-md-2 mb-3">
-        <h6 class="text-uppercase font-weight-bold">
-          <a href="./contact.html">Contact</a>
-        </h6>
-      </div>
-
-    </div>
-
-    <hr class="rgba-white-light" style="margin: 0 15%;">
-
-    <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
-
-  </div>
-
-  <div class="footer-copyright text-center py-3">
-    <a href="./index.html"> Louis Yacksmith</a>
-  </div>
-
-</footer>
-
-    <!-- End of Footer -->
-
-    <!-- Javascript -->
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-        
-    <!-- End of Javascript -->
-
-</body>
-
-</html>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html> 

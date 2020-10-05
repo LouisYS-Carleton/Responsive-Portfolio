@@ -1,203 +1,122 @@
 <!DOCTYPE html>
-
-<html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Description" content="Louis Yacksmith's personal portfolio, demonstrating both skills in web development and music alike.">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/style.css">
+    <style>
+      body {
+        margin: 0em;
+        padding-bottom: 100px;
+      }
+    </style>
+  
+  </head>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">   
-    <link rel="stylesheet" href="style.css">
-    
-    <title>Louis YS Portfolio</title>
+  <body>
 
-</head>
-
-<body>
-
-    <!-- Navbar -->
-<nav class="container"> 
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="./index.html">Louis Yacksmith</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
+    <nav class="navbar" style="background-color: rgb(1 54 68); padding: 10px; display:flex;">
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">Home</a>
+        <a href="about-me.html">About Me</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      
+      <button class="openbtn" onclick="openNav()">  
+        ☰
+      </button> 
+      <div>
+        <a id="navbar-name" href="./index.html">
+          Louis Yacksmith
+        </a>
       </div>
     </nav>
-    <!-- End of Navbar -->
+      <!--  -->
+
+      <!-- Main Section -->
+      <header id="container-header">
+          <h1 class="webpage-header">Contact</h1>
+      </header>
+      
+      <h2 class="content-head is-center">Contact Me!</h2>
+      <aside>
+           <p>
+               I would <em>love</em> to hear from you! </p>
+               <p>Please use the <b><em>Contact Form</em></b>
+               to send me a message, use one of my social media links below, or if you would prefer you can also email me at "louisyacksmith@hotmail.com".
+           </p>
+       </aside>
     
-    <!-- Main Contact Info -->
+    <!-- START HERE -->
 
-    <!-- Needs a PHP Server such as Apache to run the email form, will attach PHP file once I am able to do that. -->
+      <form id="gform" method="POST" class="pure-form pure-form-stacked"
+      action="" style="padding: 20px;">   
+        <fieldset class="pure-group">
+          <label for="name">Name: </label>
+          <input id="name" name="name" placeholder="Hello!" />
+        </fieldset>
+    
+        <fieldset class="pure-group">
+          <label for="message">Message: </label>
+          <textarea id="message" name="message" rows="10"
+          placeholder="What's on your mind?"></textarea>
+        </fieldset>
+    
+        <fieldset class="pure-group">
+          <label for="email"><em>Your</em> Email Address:</label>
+          <input id="email" name="email" type="email" value=""
+          required placeholder="your.name@email.com"/>
+          <span id="email-invalid" style="visibility:hidden">
+            Must be a valid email address
+          </span>
+        </fieldset>
+    
+        <fieldset class="pure-group">
+          <label for="color">Favourite Color: </label>
+          <input id="color" name="color" placeholder="green" />
+        </fieldset>
+    
+        <button class="button-success pure-button button-xlarge">
+          <i class="fa fa-paper-plane"></i>&nbsp;Send</button>  
+      </form>
+    
+      <!-- Customise the Thankyou Message People See when they submit the form: -->
+      <div style="display:none;" id="thankyou_message">
+        <h2><em>Thanks</em> for contacting me!
+          I'll get back to you soon!</h2>
+      </div>
+    
+      <header id="container-header">
+        <h3 class="song-section">- Social Media Links -</h3>
+      </header>
 
-<main class="container">
+      <section data-social>
+        <a href="https://www.facebook.com/LouisYacksmith/" class="ion-social-facebook"><span>Facebook</span></a>
+        <a href="https://github.com/LouisYS-Carleton" class="ion-social-youtube"><span>Github</span></a>
+        <a href="https://www.linkedin.com/in/louis-yacksmith-2a06321b2/" class="ion-social-linkedin"><span>LinkedIN</span></a>
+      </section>
 
-  <section class="mb-4">
-    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact me</h2>
-      <p class="text-center w-responsive mx-auto mb-5">
-        Do you have any questions? Please do not hesitate to contact me directly. I will come back to you within a matter of hours to help you.
-      </p>
+      <!-- Submit the Form to Google Using "AJAX" -->
+      <script data-cfasync="false" type="text/javascript"
+      src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+    <!-- END -->
 
-    <div class="row">
-      <div class="col-md-9 mb-md-0 mb-5">
-        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-    <div class="row">
-      <div class="col-md-6">
-        <div class="md-form mb-0">
-          <input type="text" id="name" name="name" class="form-control">
-            <label for="name" class="">Your name</label>
+      <!-- footer -->
+      <div id="footer">
+        <div class="row">
+          <a href="./index.html" class="footer-links">Home</a>
+          <a href="./about-me.html" class="footer-links">About Me</a>
+          <a href="./portfolio.html" class="footer-links">Portolio</a>
+          <a href="./contact.html" class="footer-links">Contact</a>
         </div>
       </div>
 
-      <div class="col-md-6">
-        <div class="md-form mb-0">
-          <input type="text" id="email" name="email" class="form-control">
-              <label for="email" class="">Your email</label>
-        </div>
-      </div>               
-    </div>
-
-    <div class="row">
-      <div class="col-md-12">
-          <div class="md-form mb-0">
-              <input type="text" id="subject" name="subject" class="form-control">
-                <label for="subject" class="">Subject</label>
-          </div>
-      </div>
-    </div>
-
-
-    <div class="row">
-      <div class="col-md-12">
-          <div class="md-form">
-              <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                <label for="message">Your message</label>
-          </div>
-      </div>
-    </div>
-
-        </form>
-
-    <div class="text-center text-md-left">
-      <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-    </div>
-
-    <div class="status"></div>
-
-      </div>
- 
-      <div class="col-md-3 text-center">
-          <ul class="list-unstyled mb-0">
-              <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                  <p>Ottawa Ontario, K2P 0A6</p>
-              </li>
-
-              <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                  <p>+1 514-230-2932</p>
-              </li>
-
-              <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                  <p>louisyscarleton@gmail.com</p>
-              </li>
-          </ul>
-      </div>
-
-    </div>
-
-  </section>
-
-</main>
-
-    <!-- End of Main Contact Info -->
-
-    <!-- Footer -->
-
-<footer class="page-footer font-small indigo">
-
-  <div class="container">
-
-    <hr class="rgba-white-light" style="margin: 0 15%;">
-
-      <div class="row text-center d-flex justify-content-center pt-5 mb-3">
-
-<!-- Facebook -->
-        <form action="https://www.facebook.com/LouisYacksmith/">
-          <input class="socials" type="submit" value="Facebook"/>
-        </form>
-
-<!-- Linkedn -->
-        <form action="https://github.com/LouisYS-Carleton">
-          <input class="socials" type="submit" value="Github"/>
-        </form>
-
-<!-- Github -->
-        <form action="https://www.linkedin.com/in/louis-yacksmith-2a06321b2/">
-          <input class="socials" type="submit" value="Linkedn"/>
-        </form>
-
-      </div>
-
-    <div class="row text-center d-flex justify-content-center pt-5 mb-3">
-      <div class="col-md-2 mb-3">
-        <h6 class="text-uppercase font-weight-bold">
-          <a href="./index.html">Home</a>
-        </h6>
-      </div>
-
-      <div class="col-md-2 mb-3">
-        <h6 class="text-uppercase font-weight-bold">
-          <a href="./portfolio.html">Portolio</a>
-        </h6>
-      </div>
-
-      <div class="col-md-2 mb-3">
-        <h6 class="text-uppercase font-weight-bold">
-          <a href="./contact.html">Contact</a>
-        </h6>
-      </div>
-
-    </div>
-
-    <hr class="rgba-white-light" style="margin: 0 15%;">
-
-    <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
-
-  </div>
-
-  <div class="footer-copyright text-center py-3">
-    <a href="./index.html"> Louis Yacksmith</a>
-  </div>
-
-</footer>
-
-
-    <!-- End of Footer -->
-
-    <!-- Javascript -->
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-        
-    <!-- End of Javascript -->
-    
-</body>
-</html>
+  <script src="./script.js"></script>
+  </body>
+</html> 

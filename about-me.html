@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Louis Yacksmith's personal portfolio, demonstrating both skills in web development and music alike.">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar" style="background-color: rgb(1 54 68); padding: 10px; display:flex;">
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">Home</a>
+        <a href="about-me.html">About Me</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      
+      <button class="openbtn" onclick="openNav()">  
+        ☰
+      </button> 
+      <div>
+        <a id="navbar-name" href="./index.html">
+          Louis Yacksmith
+        </a>
+      </div>
+    </nav>
+      <!--  -->
+
+      <!-- Main Section -->
+      <main>
+        <header id="container-header">
+            <h1 class="webpage-header">About Me</h1>
+        </header>
+
+        <div class="main-gallery js-flickity" data-flickity-options='{"cellAlign": "left", "contain": true}'>
+          <div class="gallery-cell">        
+            <p id="school-paragraph" class= "about-me-paragraphs">
+              Being highly driven in a creative sense, I focused more on alternative forms of education during my main highschool career. As a result, I ended up moving school to Richard Pfaff High School to finish my studies and earn my diploma.
+            </p> 
+            <img src="./Assets/me.jpg" alt="School" id="picture-of-me" class="about-me-photos">  
+          </div>     
+
+          <div class="gallery-cell"> 
+            <p id="post-school-paragraph" class= "about-me-paragraphs">
+              After graduating from highschool, I was determined to learn as much about myself as I could before continuing with my studies. During this time I did every odd job imaginable, ranging from door to door sales to supervising a toy store. This time in my life was incredibly beneficial, and I believe I gained people skills that are highly adaptable and infinitely useful for what was to come when I started in the restaurant industry.
+            </p>        
+            <img src="./Assets/Cydcor-why-door-to-door-sales-scaled.jpeg" alt="Door to door" id="door-to-door" class="about-me-photos">
+          </div>
+
+          <div class="gallery-cell">
+            <p id="restaurant-paragraph" class= "about-me-paragraphs">
+              After years of experimenting in the workforce, I found a career that I would be happy to stick with until I was finally ready to dedicate my life to an industry. Starting as a dishwasher at Grounded Restaurant, I quickly moved up within a year to part time chef. From there I had the time of my life in a plethora of different restaurant environments, gaining culinary skills in both fine dining and uncommon types of fast food alike.
+            </p> 
+            <img src=./Assets/20180628_173038.jpg alt="Grounded charcut board" id="charcut-board" class="about-me-photos">
+          </div>
+
+          <div class="gallery-cell">
+            <p id="restaurant-paragraph" class= "about-me-paragraphs">
+              As much as I loved the work and excelled within the industry, there came a time when I realized that I had a larger dream to strive for, and went back to school.
+            </p> 
+            <img src=./Assets/hat.png alt="Grad Hat" id="grad-hat" class="about-me-photos">
+          </div>
+
+          <div class="gallery-cell">
+            <p id="music-paragraph" class= "about-me-paragraphs">
+              I have always been an avid musician, starting with classical violin at age 6. After a year of violin I wanted to switch to guitar, so I found a teacher and played both classical and regular acoustic style music for roughly 12 years. During this time I decided to start writing my own music, and still do to this day. There are some rough samples below, check them out if you want!
+            </p> 
+            <img src=./Assets/music.jpg alt="Music Note" id="music-note" class="about-me-photos">
+          </div>
+        </div>  
+<br>
+<br>
+        <header id="container-header">
+          <h3 class="song-section">- Music -</h3>
+        </header>
+
+        <div class="main-gallery js-flickity" data-flickity-options='{"cellAlign": "left", "contain": true}'>
+          <div class="gallery-cell">
+            <iframe class="songs"  src="https://www.youtube.com/embed/RMOBUoxuYUY" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          </div>
+
+          <div class="gallery-cell">
+            <iframe class="songs" src="https://www.youtube.com/embed/9XJ7_-aMEEI" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div class="gallery-cell">
+            <iframe class="songs" src="https://www.youtube.com/embed/DHygzx7QlCQ" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div class="gallery-cell">
+            <iframe class="songs" src="https://www.youtube.com/embed/dncvpZ0nWBE" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div class="gallery-cell">
+            <iframe class="songs" src="https://www.youtube.com/embed/WKBADNFkonI" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div class="gallery-cell">
+            <iframe class="songs" src="https://www.youtube.com/embed/7ESfQ1fjt9c" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div> 
+      </main>
+      <!-- End of main section -->
+
+      <!-- footer -->
+      <div id="footer">
+        <div class="row">
+          <a href="./index.html" class="footer-links">Home</a>
+          <a href="./about-me.html" class="footer-links">About Me</a>
+          <a href="./portfolio.html" class="footer-links">Portolio</a>
+          <a href="./contact.html" class="footer-links">Contact</a>
+        </div>
+      </div>
+
+  <script src="./script.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </body>
+</html> 

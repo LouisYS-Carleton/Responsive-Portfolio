@@ -1,16 +1,441 @@
+/* Elements */
 body {
-    background-color: rgb(200, 196, 196);
+  background-color: rgb(202, 202, 202);
+  padding-bottom: 70px;
+  margin: 0px;
 }
 
-p {
-    font-size: large;
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
 
-#socials:hover {
-    border: 1px solid black;
-    background: rgb(202, 202, 243);
+a:hover {
+  text-decoration: none;
+  color: rgb(202, 199, 199);
+  cursor: pointer;
 }
 
+/* Navbar */
+#navbar-name {
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Comfortaa';
+}
+
+
+/* Classes */
+.webpage-header {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  background-color: #096479;
+  color: white;
+  font-family: 'Comfortaa';
+  padding: 15px;
+}
+
+.webpage-greeting {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+  /* Index */
 .portfolio-photos {
-      border-radius: 50%;
+  border-radius: 50%;
+  max-width: 550px;
+  max-height: 550px;
+  width: 100%;
+  height: auto;
+  margin-left: 130px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1050px) {
+  .portfolio-photos {
+    border-radius: 50%;
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
   }
+}
+
+#main-stock-cards{
+  margin: 20px;
+}
+
+.index-pictures {
+  margin-top: 40px;
+  width: 700px;
+  height: 400px;
+  margin: 10px;
+  margin-top: 90px;
+}
+
+@media screen and (max-width: 1050px) {
+  .index-pictures {
+    margin-top: 40px;
+    width: 350px;
+    height: 200px;
+    margin: 10px;
+    margin-top: 100px;
+  }
+}
+
+#greeting-info-paragraph {
+  font-size: large;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: black groove thick;
+  line-height: 35px;
+  padding:10px;
+  margin-right: 90px;
+  margin-top: 150px;
+}
+
+@media screen and (max-width: 1000px) {
+  #greeting-info-paragraph {
+    font-size: large;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: black groove thick;
+    line-height: 27px;
+    padding:10px;  
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+}
+
+  /* About Me */
+
+.song-section {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  background-color: #04272f;
+  color: white;
+  font-family: 'Comfortaa';
+  padding: 5px;
+}
+
+.songs {
+  width: 500px;
+  height: 350px;
+  margin: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .songs {
+    width: 350px;
+    height: 200px;
+    margin-left: 5px;
+  }
+}
+
+     /* Pictures - About Me */
+.about-me-photos {
+  height:350px; 
+  width:350px;
+  margin-left: 200px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  .about-me-photos {
+    height:350px; 
+    width:350px;
+    margin: 10px;
+    border-radius: 50%;
+  }
+}
+
+      /* Paragraphs - About Me */
+.about-me-paragraphs {
+  font-size: large;
+  font-weight: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 25px;
+  padding:10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .about-me-paragraphs {
+    font-size: large;
+    font-weight: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 20px;
+    padding:10px;
+  }
+}
+
+  /* Portfolio */
+
+.portfolio-paragraphs {
+  font-size: large;
+  font-weight: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 25px;
+  padding:10px;
+  padding-right: 80px;
+}
+
+@media screen and (max-width: 1000px) {
+  .portfolio-paragraphs {
+    font-size: large;
+    font-weight: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 20px;
+    padding:10px;
+    padding-right: 0px;
+  }
+}
+
+.portfolio-pictures {
+  margin-top: 40px;
+  width: 700px;
+  height: 400px;
+  margin: 15px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 1050px) {
+  .portfolio-pictures {
+    margin-top: 40px;
+    width: 338px;
+    height: 200px;
+    margin: 10px;
+  }
+}
+
+.portfolio-names {
+  margin-left: 200px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1050px) {
+  .portfolio-names {
+    margin-left: 0px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+  }
+}
+
+.portfolio-links {
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 225px;
+  margin-top: 10px;
+}
+
+.portfolio-links:hover {
+  color: #085c6e;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 225px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1150px) {
+  .portfolio-links {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 75px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .portfolio-links:hover {
+    color: #085c6e;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 75px;
+    margin-top: 10px;
+  }
+}
+
+/* Sidebar */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(1 54 68);
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  outline: none;
+}
+
+.sidebar .closebtn:hover {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #096075;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20%;
+  height: 50px;
+  outline: none;
+}
+
+.openbtn:hover {
+  font-size: 20px;
+  cursor: pointer;
+  color: rgb(199, 198, 198);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20%;
+  height: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+/* Footer */
+#footer {
+  position: fixed;
+  font-family: 'Comfortaa';
+  font-size: 14px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  background-color: rgb(4 78 97);
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.footer-links {
+  padding: 14px;
+}
+
+
+/* Carousel */
+.gallery-cell {
+  width: 100%;
+}
+
+.flickity-page-dots {
+  position: absolute;
+  width: 90% !important;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+
+@media screen and ( min-width: 768px ) {
+  .gallery-cell { width: 50%; }
+}
+
+/* Social Media Links */
+
+* {
+  box-sizing: border-box;
+}
+[data-social] {
+
+  text-align: center;
+}
+[data-social]:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+[data-social] a {
+  display: inline-block;
+  font-family: sans-serif;
+  line-height: 1;
+  padding: .5em;
+  color: white;
+  font-size: 20pt;
+  min-width: 1em;
+  text-align: center;
+  text-decoration: none;
+  transition: opacity .2s ease-in-out;
+}
+[data-social] a:focus,
+[data-social] a:hover {
+  opacity: .7;
+}
+[data-social] [class*=facebook] {
+  background: #3b5998;
+  margin: 10px;
+  border-radius: 50%;
+}
+[data-social] [class*=twitter] {
+  background: #2caae1;
+  margin: 10px;
+  border-radius: 50%;
+}
+[data-social] [class*=youtube] {
+  background: #494646;
+  margin: 10px;
+  border-radius: 50%;
+}
+[data-social] [class*=linkedin] {
+  background: #007bb6;
+  margin: 10px;
+  border-radius: 50%;
+}
+[data-social] a:nth-of-type(n+2) {
+  margin-left: .5em;
+  border-radius: 50%;
+}
+
